@@ -1,0 +1,52 @@
+.connect{
+  padding: 0 15px;
+  list-style: none;
+  &__margin-top{
+    margin-top: 100px;
+  }
+  .github{
+    background: #24292e;
+    &::before{
+      background-image: url('../images/github.fw.png');
+    }
+  }
+  .codepen{
+    background: #191919;
+    &::before{
+      background-image: url('../images/codepen.fw.png');
+    }
+  }
+  .linkedin{
+    background: #007bb6;
+    &::before{
+      background-image: url('../images/linkedin.fw.png');
+    }
+  }
+  &__item{
+    padding: 0;
+    position: relative;
+    height: 80px;
+    display: block;
+    margin-bottom: 50px;
+    &::before {
+      background-position: center;
+      background-size: 40px;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 0;
+      content: '';
+      display: inline-block;
+      width: 80px;
+      height: 100%;
+      margin: 0;
+      background-color: rgba(0,0,0, 0.3);
+    }
+    a {
+      margin-left: 100px;
+      line-height: 80px;
+      vertical-align: middle;
+      height: 100%;
+      display: inline-block;
+    }
+  }
+}

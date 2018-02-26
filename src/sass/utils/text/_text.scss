@@ -1,0 +1,49 @@
+.text {
+  text-decoration: none;
+  color: #000;
+  &__size {
+    &--large {
+      font-size: 2em;
+    }
+    &--regular {
+      font-size: 1em;
+    }
+    &--small {
+      font-size: 0.8em;
+    }
+  }
+  &__weight {
+    &--bold{
+      font-weight: 700;
+    }
+    &--regular {
+      font-weight: 500;
+    }
+    &--light{
+      font-weight: 300;
+    }
+  }
+  &__color {
+    &--white {
+      color: #fff;
+    }
+  }
+  &--caps{
+    text-transform: uppercase;
+  }
+  &__center{
+    text-align: center;
+  }
+  &--link {
+    background-image: linear-gradient(to right, #ff9966, #ff5e62);;
+    background-repeat: no-repeat;
+
+    background-size: 100% 0.1em;
+    transition: background-size 0.25s ease-in;
+    background-position: 0 88%;
+    &:hover{
+      background-size: 100% 100%;
+    }
+
+  }
+}

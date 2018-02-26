@@ -1,0 +1,27 @@
+.headline {
+  padding-left: 15px;
+  padding-right: 15px;
+  &__size {
+    &--large {
+      word-wrap: break-word;
+
+      font-size: 8em;
+      @media (max-width: 500px) {
+        font-size: 4em;
+      }
+    }
+    &--regular {
+      font-size: 4em;
+    }
+    &--small {
+      font-size: 2em;
+    }
+  }
+  &--close {
+    margin: 0;
+    line-height: 0.8;
+  }
+  &--caps{
+    text-transform: uppercase;
+  }
+}

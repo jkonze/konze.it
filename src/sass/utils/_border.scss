@@ -1,0 +1,17 @@
+.section {
+  &--border {
+    position: relative;
+    &::before {
+      content: '';
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: calc(100% - 30px);
+      height: calc(100% - 30px);
+      border: 0.8em solid #fff;
+    }
+  }
+}

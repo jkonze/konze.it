@@ -1,0 +1,14 @@
+.table{
+  &__col {
+    &--minwidth{
+      min-width: 150px;
+      max-width: 150px;
+    }
+  }
+  &__row{
+    vertical-align: top;
+    td {
+      padding-bottom: 0.5em;
+    }
+  }
+}

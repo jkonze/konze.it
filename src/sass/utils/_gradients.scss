@@ -1,0 +1,18 @@
+.gradient {
+  &--orange-coral {
+    background: #ff9966; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ff9966, #ff5e62); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ff9966, #ff5e62); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  &--chitty-chitty {
+    background: #007991; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #007991, #78ffd6); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #007991, #78ffd6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  &--night-day{
+    background: #2c3e50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3498db , #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+}
