@@ -21,7 +21,7 @@
     },
     options: skillChartotions
   })
-  sitecore.noop()
+  console.log(sitecore)
 
   var html5context = document.getElementById('html5').getContext('2d')
   var html5 = new Chart(html5context, {
@@ -36,7 +36,7 @@
     },
     options: skillChartotions
   })
-  html5.noop()
+  console.log(html5)
 
   var typo3context = document.getElementById('typo3').getContext('2d')
   var typo3 = new Chart(typo3context, {
@@ -51,7 +51,7 @@
     },
     options: skillChartotions
   })
-  typo3.noop()
+  console.log(typo3)
 
   var slimphpcontext = document.getElementById('slimphp').getContext('2d')
   var slimphp = new Chart(slimphpcontext, {
@@ -66,7 +66,7 @@
     },
     options: skillChartotions
   })
-  slimphp.noop()
+  console.log(slimphp)
 
   var symfony3context = document.getElementById('symfony3').getContext('2d')
   var symfony3 = new Chart(symfony3context, {
@@ -81,7 +81,7 @@
     },
     options: skillChartotions
   })
-  symfony3.noop()
+  console.log(symfony3)
 
   var nodejscontext = document.getElementById('nodejs').getContext('2d')
   var nodejs = new Chart(nodejscontext, {
@@ -96,7 +96,7 @@
     },
     options: skillChartotions
   })
-  nodejs.noop()
+  console.log(nodejs)
 
   var css3context = document.getElementById('css3').getContext('2d')
   var css3 = new Chart(css3context, {
@@ -111,7 +111,7 @@
     },
     options: skillChartotions
   })
-  css3.noop()
+  console.log(css3)
 
   var csharpcontext = document.getElementById('csharp').getContext('2d')
   var csharp = new Chart(csharpcontext, {
@@ -126,7 +126,7 @@
     },
     options: skillChartotions
   })
-  csharp.noop()
+  console.log(csharp)
 
   var phpcontext = document.getElementById('php').getContext('2d')
   var php = new Chart(phpcontext, {
@@ -141,7 +141,7 @@
     },
     options: skillChartotions
   })
-  php.noop()
+  console.log(php)
 
   var dotnetcontext = document.getElementById('dotnet').getContext('2d')
   var dotnet = new Chart(dotnetcontext, {
@@ -156,7 +156,7 @@
     },
     options: skillChartotions
   })
-  dotnet.noop()
+  console.log(dotnet)
 
   var angularcontext = document.getElementById('angular').getContext('2d')
   var angular = new Chart(angularcontext, {
@@ -171,9 +171,8 @@
     },
     options: skillChartotions
   })
-  angular.noop()
+  console.log(angular)
 
   var sr = ScrollReveal()
-
   sr.reveal('.js-reveal')
 })()
