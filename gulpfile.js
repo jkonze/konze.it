@@ -86,7 +86,7 @@ gulp.task('browser-sync', function () {
 })
 
 gulp.task('cleanup', function () {
-  del(['!/dist/index.html', '/dist/'])
+  del(['!/dist/*.html', '/dist/'])
 })
 
 gulp.task('deploy', function () {
@@ -96,6 +96,7 @@ gulp.task('deploy', function () {
 })
 
 gulp.task('develop', function () {
+  runSequence(['images','javascript', 'styles'])
   gulp.start('browser-sync')
   gulp.watch(input.images, ['images'])
   gulp.watch(input.javascript, ['javascript'])
