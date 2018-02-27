@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Johannes Konze</title>
-    <link rel="icon" 
+    <link rel="icon"
       type="image/png"
       href="/images/favi-cat.png">
     <meta name="viewport" content="width=device-width">
@@ -235,17 +235,17 @@
                 Melde</h1>
             <h1 class="{ js-reveal }[ text__weight--regular text__color--white ][ headline headline__size--large headline--caps headline--close ]">
                 Dich </h1>
-            <form class="{ js-reveal }[ contact ][ col-md-8 col-sm-12 ]">
+            <form id="contactform" class="{ js-reveal }[ contact ][ col-md-8 col-sm-12 ]">
                 <div class="[ row ][ contact__row ]">
                     <div class="[ col-md-6 col-sm-12 ][ contact__input ]">
 
-                        <input id="firstname" required="required"
+                        <input name="firstname" id="firstname" required="required"
                                class="[ input ][ contact__text ][ text__color--white text__size--regular text__weight--light ]"
                                type="text"/>
                         <label for="firstname" class="[ input__label ]">Vorname</label>
                     </div>
                     <div class="col-md-6 col-sm-12 contact__input">
-                        <input id="lastname"
+                        <input name="lastname" id="lastname"
                                class="[ input ][ contact__text ][ text__color--white text__size--regular text__weight--light ]"
                                type="text" required="required"/>
                         <label for="lastname" class="[ input__label ]">Nachname</label>
@@ -254,14 +254,14 @@
                 </div>
                 <div class="[ row ][ contact__row ]">
                     <div class="col-md-6 col-sm-12 contact__input">
-                        <input id="company" required="required"
+                        <input name="company" id="company" required="required"
                                class="[ input ][ contact__text ][ text__color--white text__size--regular text__weight--light ]"
                                type="text"/>
                         <label for="company" class="[ input__label ]">Firma</label>
 
                     </div>
                     <div class="col-md-6 col-sm-12 contact__input">
-                        <input id="email"
+                        <input name="email" id="email"
                                class="[ input ][ contact__text ][ text__color--white text__size--regular text__weight--light ]"
                                type="email" required="required"/>
                         <label for="email" class="[ input__label ]">E-Mail</label>
@@ -271,6 +271,8 @@
                 <div class="[ row ][ contact__row ]">
                     <div class="[ col-md-16 col-sm-12 ][ contact__input ]">
                         <textarea rows="6"
+                                  name="text"
+                                  id="text"
                                   class="textarea contact__text text__color--white text__size--regular text__weight--light"
                                   placeholder="Bemerkung"></textarea>
                     </div>
@@ -282,7 +284,7 @@
                                value="Absenden"/>
                     </div>
                 </div>
-                <input type="text" value="" id="yummy" class="[ yummy ]"/>
+                <input name="yummy" type="text" value="" id="yummy" class="[ yummy ]"/>
             </form>
         </div>
     </section>
