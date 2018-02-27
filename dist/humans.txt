@@ -1,0 +1,18 @@
+/* THANKS */
+
+The awesome folks from NodeJs: https://nodejs.org/
+The fabuolus Gulp guys: https://gulpjs.com/
+Basically everyone who contributed to all the packages that I use.
+
+/* SITE */
+Last update: 2018/02/27
+
+Standards: HTML5, CSS3, ES5
+Components: ChartJS, ScrollReveal
+
+/* ME */
+Twitter: @wasnlosdu
+GitHub: https://github.com/wasnlosdu
+Mail: johannes@konze.it
+
+Location: Bremen, Germany.
