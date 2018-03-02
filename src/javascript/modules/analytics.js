@@ -8,7 +8,7 @@ define(function (require) {
   window.ga('create', 'UA-110148302-1')
   window.ga('send', 'pageview')
   module = function () { window.ga.apply(this, arguments) }
-  require(['http://www.google-analytics.com/analytics.js'])
+  require(['https://www.google-analytics.com/analytics.js'])
   console.log('📸 Tracking with https://www.google.com/analytics/')
   return module
 })
