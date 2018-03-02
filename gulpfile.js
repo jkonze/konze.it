@@ -19,16 +19,19 @@ var plumber = require('gulp-plumber')
 
 /** Optimisation **/
 var imagemin = require('gulp-imagemin')
+var critical = require('critical').stream
 
 var input = {
   styles: 'src/sass/**/*.scss',
   javascript: 'src/javascript/**/*.js',
-  images: 'src/images/*'
+  images: 'src/images/*',
+  html: 'src/*.html'
 }
 var output = {
   styles: 'dist/styles/',
   javascript: 'dist/javascript',
-  images: 'dist/images/'
+  images: 'dist/images',
+  html: 'dist'
 }
 
 gulp.task('styles', function () {
@@ -76,6 +79,17 @@ gulp.task('images', function () {
     .pipe(browserSync.stream())
 })
 
+gulp.task('critical', function () {
+  return gulp.src(input.html)
+    .pipe(critical({base: 'dist/', inline: true, css: ['dist/styles/styles.css']}))
+    .pipe(gulp.dest(output.html))
+})
+
+gulp.task('html', function () {
+  return gulp.src(input.html)
+    .pipe(gulp.dest(output.html))
+})
+
 gulp.task('browser-sync', function () {
   return browserSync.init({
     server: {
@@ -86,18 +100,19 @@ gulp.task('browser-sync', function () {
 })
 
 gulp.task('cleanup', function () {
-  del(['!/dist/*.html','!/dist/*.txt', '/dist/'])
+  del(['!/dist/*.txt', '/dist/'])
 })
 
 gulp.task('deploy', function () {
   runSequence('cleanup',
-    ['images', 'javascript:prod', 'styles:prod']
+    ['html', 'images', 'javascript:prod', 'styles:prod', 'critical']
   )
 })
 
 gulp.task('develop', function () {
-  runSequence(['images','javascript', 'styles'])
+  runSequence(['images', 'javascript', 'styles', 'html'])
   gulp.start('browser-sync')
+  gulp.watch(input.html, ['html'])
   gulp.watch(input.images, ['images'])
   gulp.watch(input.javascript, ['javascript:prod'])
   gulp.watch(input.styles, ['styles'])

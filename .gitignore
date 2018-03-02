@@ -1,5 +1,4 @@
 dist/*
-!dist/*.html
 !dist/*.txt
 # Created by https://www.gitignore.io/api/node,webstorm
 
