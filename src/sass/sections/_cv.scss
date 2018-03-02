@@ -102,6 +102,7 @@
     }
   }
   &:after {
+    z-index: -1;
     top: -10px;
     display: block;
     position: absolute;

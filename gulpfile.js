@@ -22,7 +22,7 @@ var imagemin = require('gulp-imagemin')
 
 var input = {
   styles: 'src/sass/**/*.scss',
-  javascript: 'src/javascript/*.js',
+  javascript: 'src/javascript/**/*.js',
   images: 'src/images/*'
 }
 var output = {
