@@ -14,7 +14,7 @@ var cleanCSS = require('gulp-clean-css')
 
 /** Javascript **/
 var standard = require('gulp-standard')
-var uglify = require('gulp-uglify')
+var minify = require('gulp-minify')
 var plumber = require('gulp-plumber')
 
 /** Optimisation **/
@@ -65,7 +65,7 @@ gulp.task('javascript', function () {
 
 gulp.task('javascript:prod', function () {
   return gulp.src(input.javascript)
-    .pipe(uglify())
+    .pipe(minify())
     .pipe(gulp.dest(output.javascript))
 })
 
@@ -99,7 +99,7 @@ gulp.task('develop', function () {
   runSequence(['images','javascript', 'styles'])
   gulp.start('browser-sync')
   gulp.watch(input.images, ['images'])
-  gulp.watch(input.javascript, ['javascript'])
+  gulp.watch(input.javascript, ['javascript:prod'])
   gulp.watch(input.styles, ['styles'])
   gulp.watch('dist/*.html').on('change', browserSync.reload)
 })

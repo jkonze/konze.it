@@ -1,10 +1,4 @@
 /* global requirejs */
-window.GoogleAnalyticsObject = '__ga__'
-window.__ga__ = {
-  q: [['create', 'UA-XXXXXXXX-Y', 'auto']],
-  l: Date.now()
-}
-
 requirejs.config({
   baseUrl: 'javascript',
   paths: {
@@ -14,7 +8,7 @@ requirejs.config({
   }
 })
 
-require(['modules/analytics'])
+requirejs(['modules/analytics'])
 
 var revealElements
 revealElements = document.getElementsByClassName('js-reveal')
