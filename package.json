@@ -2,7 +2,7 @@
   "name": "konze.it",
   "version": "1.0.0",
   "scripts": {
-    "deploy": "gulp deploy",
+    "deploy": "npm install && gulp deploy",
     "develop": "gulp develop"
   },
   "license": "MIT",
