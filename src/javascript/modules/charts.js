@@ -12,5 +12,6 @@ define(function (require) {
   Chart.createChart('php', 12)
   Chart.createChart('dotnet', 12)
   Chart.createChart('angular', 9)
-  console.log('📈 Beautiful charts with http://www.chartjs.org/')
+  var styles = 'background: #3867d6; color: white;'
+  console.log('%c 📈 Beautiful charts with \t\t\t\n\thttp://www.chartjs.org/\t\t\t', styles)
 })

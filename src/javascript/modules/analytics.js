@@ -9,6 +9,7 @@ define(function (require) {
   window.ga('send', 'pageview')
   module = function () { window.ga.apply(this, arguments) }
   require(['https://www.google-analytics.com/analytics.js'])
-  console.log('📸 Tracking with https://www.google.com/analytics/')
+  var styles = 'background: #4b7bec; color: white;'
+  console.log('%c 📸 Tracking views with  \t\t\t\n\thttps://analytics.google.com/\t', styles)
   return module
 })

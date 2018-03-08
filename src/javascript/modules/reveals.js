@@ -5,5 +5,6 @@ define(function (require) {
   var reveal
   reveal = ScrollReveal()
   reveal.reveal('.js-reveal')
-  console.log('🙈 Revealing content with https://scrollrevealjs.org/')
+  var styles = 'background: #2bcbba; color: white;'
+  console.log('%c 🙈 Revealing content with \t\t\t\n\thttps://scrollrevealjs.org/\t\t', styles)
 })
