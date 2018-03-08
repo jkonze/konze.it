@@ -100,7 +100,7 @@ gulp.task('browser-sync', function () {
 })
 
 gulp.task('cleanup', function () {
-  del(['!/dist/*.txt', '/dist/'])
+  del(['!/dist/*.txt', '!/dist/*.json', '/dist/'])
 })
 
 gulp.task('deploy', function () {
