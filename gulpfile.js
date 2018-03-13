@@ -105,7 +105,7 @@ gulp.task('cleanup', function () {
 
 gulp.task('deploy', function () {
   runSequence('cleanup',
-    ['html', 'images', 'javascript:prod', 'styles:prod', 'critical']
+    ['html', 'images', 'javascript:prod', 'styles:prod'],'critical'
   )
 })
 
